@@ -1,0 +1,56 @@
+body {
+    font-family: "Open Sans", sans-serif; }
+  
+  h1, h2, h3 {
+    font-family:  cursive; }
+  
+  h2 {
+    color: black; }
+  
+  header h2 {
+    color: #CEC8FF; }
+  
+  .site-footer {
+    position: fixed-bottom;
+    background-image: linear-gradient(rgb(10, 51, 10), rgb(106, 44, 15));
+    padding: 20px 0; }
+  
+  .jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, #fb0202, #bc0202, #7f0303, #bc0202, #fb0202);
+    color: white; }
+  
+  .row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px; }
+  
+  .navbar {
+    background-color: rgb(10, 51, 10);
+   
+ }
+  
+  .card {
+    border: solid black 1px; }
+  
+  .tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px; }
+  
+  a, a:hover {
+    color: inherit;
+    text-decoration: none; }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); }
+  
+  .carousel {
+    border: solid #5637dd; }
+  
+  #carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100; }
