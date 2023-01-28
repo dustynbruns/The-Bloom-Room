@@ -21,13 +21,47 @@
                 <div class="hamburger">
                     <a href="#">
                         <i class="fa fa-lg fa-bars"></i>
-                        <a href="cart.html"><i class="fa fa-shopping-cart fa-lg"></i></a>
+                        <!-- <a href="cart.html"><i class="fa fa-shopping-cart fa-lg"></i></a> -->                   
                     </a>
+                </div>    
+                <div class="shopping-cart">
+                    <div class="sum-prices">
+                        <a><i class="fa fa-lg fa-shopping-cart shoppingCartButton"></i>
+                        <h6 id="sum-prices"></h6></a>
+                    </div>
+                </div>
+                
+
+                
+                <div class="producstOnCart hide">
+                    <div class="overlay"></div>
+                    <div class="top">
+                        <button id="closeButton">
+                            <i class="fa fa-times-circle"></i>
+                        </button>
+                        <h3>Cart</h3>
+                    </div>
+                    <ul id="buyItems">
+                        <h4 class="empty">Your shopping cart is empty</h4>
+                        <!-- <li class="buyItem">
+                            <img src="Images/producs-images/Mobiles/galaxynote10.png">
+                            <div>
+                                <h5>Products Name</h5>
+                                <h6>$199</h6>
+                                <div>
+                                    <button>-</button>
+                                    <span class="countOfProduct">1</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+                    <a href="cart.html"><button class="btn checkout hidden">Check out</button></a>
                 </div>
             </div>
 
             <header>
-                <div class="container">
+                <div class="container mb-0">
                     <div class="row">
                         <div class="col text-dark">
                             <h1>T.B.R.</h1>
@@ -39,11 +73,47 @@
                     </div>
                 </div>
             </header>
+            <hr />
 
             <div class="container">
-                <div class="row row-content">
-
+                <div class="row">
+                    <h2>Have questions? Want to make a custom order? Please give us a call at the phone number below!</h2>
+                    <a role="button" class="btn btn-lg btn-link" href="tel:+18063164817"><i class="fa fa-phone"></i> (806) 316-4817</a><br />
                 </div>
+            
+                <div class="row row-content">
+                    <div class="col-12">
+                        <h2>Send us your Feedback</h2>
+                        <hr />
+                    </div>
+                    <div class="col-md-10">
+                        <form>
+                            <div class="form-group row">
+                                <label for="firstName" class="col-md-2 col-form-label">Full Name</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your full name here" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-md-2 col-form-label">Email</label>
+                                <div class="col-md-10">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                                <div class="col-md-10">
+                                    <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="offset-md-2 col-md-10">
+                                    <button type="submit" class="btn btn-primary">Send Feedback</button>
+                                </div>
+                            </div>
+                        </form> 
+                    </div>
+               </div>
             </div>
 
             <footer class="site-footer">
@@ -124,6 +194,7 @@
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/shoppingCart.js"></script>
 
 
 </html>

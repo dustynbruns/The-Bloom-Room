@@ -15,36 +15,65 @@
 <!-- wrapper -->
     <div class="wrapper">
 <!-- page content -->
-        <div class="section">
+        <div class="section align-items-center">
 
             <div class="top_navbar sticky-top">
                 <div class="hamburger">
                     <a href="#">
                         <i class="fa fa-lg fa-bars"></i>
-                        <a href="cart.html"><i class="fa fa-shopping-cart fa-lg"></i></a>
+                        <!-- <a href="cart.html"><i class="fa fa-shopping-cart fa-lg"></i></a> -->                   
                     </a>
-                </div>
-            </div>
-
-            <header>
-                <div class="container">
-                    <div class="row">
-                        <div class="col text-dark">
-                            <h1>T.B.R.</h1>
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active">Your cart</li>
-                            </ol>
-                        </div>
+                </div>    
+                <div class="shopping-cart">
+                    <div class="sum-prices">
+                        <a><i class="fa fa-lg fa-shopping-cart shoppingCartButton"></i>
+                        <h6 id="sum-prices"></h6></a>
                     </div>
                 </div>
-            </header>
+                
 
-            <div class="container">
-                <div class="row row-content">
-
+                
+                <div class="producstOnCart hide">
+                    <div class="overlay"></div>
+                    <div class="top">
+                        <button id="closeButton">
+                            <i class="fa fa-times-circle"></i>
+                        </button>
+                        <h3>Cart</h3>
+                    </div>
+                    <ul id="buyItems">
+                        <h4 class="empty">Your shopping cart is empty</h4>
+                        <!-- <li class="buyItem">
+                            <img src="Images/producs-images/Mobiles/galaxynote10.png">
+                            <div>
+                                <h5>Products Name</h5>
+                                <h6>$199</h6>
+                                <div>
+                                    <button>-</button>
+                                    <span class="countOfProduct">1</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+                    <a href="cart.html"><button class="btn checkout hidden">Check out</button></a>
                 </div>
             </div>
+
+                <header>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-dark">
+                                <h1>T.B.R.</h1>
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active">Your cart</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
 
             <footer class="site-footer">
                 <div class="container">
@@ -65,7 +94,7 @@
                             <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
                             <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
                         </div>
-                        <div class="col-sm-4 text-center">
+                        <div class="col-sm-4 text-center text-light">
                             <a role="button" class="btn btn-link" href="tel:+18063164817"><i class="fa fa-phone"></i> (806) 316-4817</a><br />
                             <a role="button" class="btn btn-link" href="mailto:dustyn79087@gmail.com"><i class="fa fa-envelope-o"></i> dustyn79087@gmail.com</a>
                         </div>
@@ -124,6 +153,6 @@
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
-
+<script src="js/shoppingCart.js"></script>
 
 </html>

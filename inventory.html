@@ -21,8 +21,42 @@
                 <div class="hamburger">
                     <a href="#">
                         <i class="fa fa-lg fa-bars"></i>
-                        <a href="cart.html"><i class="fa fa-shopping-cart fa-lg"></i></a>
+                        <!-- <a href="cart.html"><i class="fa fa-shopping-cart fa-lg"></i></a> -->                   
                     </a>
+                </div>    
+                <div class="shopping-cart">
+                    <div class="sum-prices">
+                        <a href="cart.html"><i class="fa fa-lg fa-shopping-cart shoppingCartButton"></i></a>
+                        <h6 class="text-light" id="sum-prices"></h6>
+                    </div>
+                </div>
+                
+
+                
+                <div class="producstOnCart hide">
+                    <div class="overlay"></div>
+                    <div class="top">
+                        <button id="closeButton">
+                            <i class="fa fa-times-circle"></i>
+                        </button>
+                        <h3>Cart</h3>
+                    </div>
+                    <ul id="buyItems">
+                        <h4 class="empty">Your shopping cart is empty</h4>
+                        <!-- <li class="buyItem">
+                            <img src="Images/producs-images/Mobiles/galaxynote10.png">
+                            <div>
+                                <h5>Products Name</h5>
+                                <h6>$199</h6>
+                                <div>
+                                    <button>-</button>
+                                    <span class="countOfProduct">1</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+                    <a href="cart.html"><button class="btn checkout hidden">Check out</button></a>
                 </div>
             </div>
             
@@ -41,12 +75,13 @@
             </header>
 
             <hr>
-
+            <main>
+            <section class="main-section">
             <div class="product-container">
 
                 <div class="row row-content">
                     <div class="col col-sm-12 text-center mx-auto">
-                        <h3>Our Bouquets</h3>
+                        <h2>Our Bouquets</h2>
                     </div>
                 </div>
 
@@ -55,9 +90,9 @@
                     <div class="product">
                         <div class="product-under">
                             <figure class="product-image">
-                                <img src="img/bouquet1.jpg" alt="bouquet1">
+                                <img class="img-thumbnail img-fluid" src="img/bouquet1.jpg" alt="bouquet1">
                                 <div class="product-over">
-                                    <button class="btn btn-small addToCart text-light" data-product-id="1"><i class="fa fa-cart-plus">Add to cart</i></button>
+                                    <button class="btn btn-small addToCart text-light" data-product-id="1"><i class="fa fa-cart-plus"></i>Add to cart</button>
                                 </div>
                             </figure>
                             <div class="product-summary">
@@ -74,13 +109,13 @@
                     <div class="product">
                         <div class="product-under">
                             <figure class="product-image">
-                                <img src="img/bouquet2.jpg" alt="bouquet2">
+                                <img class="img-thumbnail img-fluid" src="img/bouquet2.jpg" alt="bouquet2">
                                 <div class="product-over">
                                     <button class="btn btn-small addToCart text-light" data-product-id="2"><i class="fa fa-cart-plus">Add to cart</i></button>
                                 </div>
                             </figure>
                             <div class="product-summary">
-                                <h4 class="productName">Large Bouquet</h4>
+                                <h4 class="productName">Medium Bouquet</h4>
                                 <span class="stars"></span>
                                 <p>
                                     A beautiful gift!
@@ -93,7 +128,7 @@
                     <div class="product">
                         <div class="product-under">
                             <figure class="product-image">
-                                <img src="img/bouquet3.jpg" alt="bouquet3">
+                                <img class="img-fluid img-thumbnail" src="img/bouquet3.jpg" alt="bouquet3">
                                 <div class="product-over">
                                     <button class="btn btn-small addToCart text-light" data-product-id="3"><i class="fa fa-cart-plus">Add to cart</i></button>
                                 </div>
@@ -112,7 +147,7 @@
                     <div class="product">
                         <div class="product-under">
                             <figure class="product-image">
-                                <img src="img/bouquet4.jpg" alt="bouquet4">
+                                <img class="img-fluid" src="img/bouquet4.jpg" alt="bouquet4">
                                 <div class="product-over">
                                     <button class="btn btn-small addToCart text-light" data-product-id="4"><i class="fa fa-cart-plus">Add to cart</i></button>
                                 </div>
@@ -131,7 +166,7 @@
                     <div class="product">
                         <div class="product-under">
                             <figure class="product-image">
-                                <img src="img/bouquet5.jpg" alt="bouquet5">
+                                <img class="img-fluid img-thumbnail" src="img/bouquet5.jpg" alt="bouquet5">
                                 <div class="product-over">
                                     <button class="btn btn-small addToCart text-light" data-product-id="5"><i class="fa fa-cart-plus">Add to cart</i></button>
                                 </div>
@@ -150,7 +185,7 @@
                     <div class="product">
                         <div class="product-under">
                             <figure class="product-image">
-                                <img src="img/bouquet6.jpg" alt="bouquet6">
+                                <img class="img-fluid" src="img/bouquet6.jpg" alt="bouquet6">
                                 <div class="product-over">
                                     <button class="btn btn-small addToCart text-light" data-product-id="6"><i class="fa fa-cart-plus">Add to cart</i></button>
                                 </div>
@@ -169,7 +204,7 @@
                     <div class="product">
                         <div class="product-under">
                             <figure class="product-image">
-                                <img src="img/bouquet7.jpg" alt="bouquet7">
+                                <img class="img-fluid" src="img/bouquet7.jpg" alt="bouquet7">
                                 <div class="product-over">
                                     <button class="btn btn-small addToCart text-light" data-product-id="7"><i class="fa fa-cart-plus">Add to cart</i></button>
                                 </div>
@@ -188,7 +223,7 @@
                     <div class="product">
                         <div class="product-under">
                             <figure class="product-image">
-                                <img src="img/bouquet8.jpg" alt="bouquet8">
+                                <img class="img-fluid" src="img/bouquet8.jpg" alt="bouquet8">
                                 <div class="product-over">
                                     <button class="btn btn-small addToCart text-light" data-product-id="8"><i class="fa fa-cart-plus">Add to cart</i></button>
                                 </div>
@@ -206,6 +241,8 @@
                     
                 </div>
             </div>
+        </section>
+        </main>
 <!-- footer -->
             <footer class="site-footer">
                 <div class="container">
