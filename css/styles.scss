@@ -1,0 +1,309 @@
+
+
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Arimo', sans-serif;
+}
+
+/* body {
+    font-family: "Open Sans", sans-serif;
+    background-color:white;
+   } */
+
+   body {
+    background: #eecda3;
+    background: -webkit-linear-gradient(to right, #eecda3, #ef629f);
+    background: linear-gradient(to right, #eecda3, #ef629f);
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-family:  cursive; }
+
+  h2, h3  {
+    font-family: fantasy;
+  }
+  
+  h2 {
+    color: black; }
+  
+  header h2 {
+    color: #CEC8FF; }
+  
+  .site-footer {
+    max-height: 325px;
+    position: bottom;
+    background-image: linear-gradient(black, rgb(61, 68, 60));
+    background-size: cover;
+    padding: 30px 0;
+    align-items: center;
+   }
+
+   footer
+  {clear:both;
+  background: black;
+  font-size: .85em;
+  color: #fff;}
+
+  p
+    {margin: 0 1em;
+    line-height: 3em;
+    color: gray;}
+  
+  .jumbotron {
+    background: #efd5f0;
+    margin: 0;
+    padding: 30px;
+    color: white; }
+  
+  .row-content {
+    padding: 50px 0;
+    border-bottom: 1px salmon;
+    min-height: 200px;
+    position: static;
+    align-self: center;
+    padding-left: 150px;
+}
+  
+  .navbar {
+    background-color: rgb(10, 51, 10);
+    position: fixed-left;
+    min-height: 50px;
+   
+ }
+  
+//   .card {
+//     border: solid black 1px; }
+  
+  .tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px; }
+  
+  a, a:hover {
+    color: inherit;
+    text-decoration: none; }
+
+    /* carousel */
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); }
+  
+  .carousel {
+    border: solid #e55ac4; 
+    border-style: ridge;
+    border-style: double;
+    /* max-height: 400px;
+    max-width: 350px;
+    overflow: hidden; */
+  }
+  
+  /* .carousel-inner .item .img{
+    margin: 0 auto;
+    
+  } */
+
+  #carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100; 
+  }
+
+  /* #homeCarousel .carousel- {
+    object-position: center;
+    object-fit: cover;
+    /* overflow: hidden; */
+    
+
+  /* .carousel .img {
+    height: 65%;
+    width: 65%;
+  } */
+/* end carousel */
+  .bg-image {
+    
+    background-size: cover;
+    background-image: url(https://www.freewebheaders.com/wp-content/gallery/flowers/cherry-spring-flowers-tree-nature-web-header.jpg)
+  }
+
+/* sidebar */
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+  *{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  
+
+  body {
+    background: #eecda3;
+    background: -webkit-linear-gradient(to right, #eecda3, #ef629f);
+    background: linear-gradient(to right, #eecda3, #ef629f);
+    min-height: 100vh;
+  }
+  
+  .wrapper .sidebar{
+    background: linear-gradient(black, rgb(61, 68, 60));
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .wrapper .sidebar .profile img{
+    display: block;
+    width: inherit;
+    height: 100px;
+      border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  .wrapper .sidebar .profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+  }
+  
+  .wrapper .sidebar .profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+  }
+  
+  .wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #e55ac4;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+  }
+  
+  .wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+  }
+  
+   
+  
+  .wrapper .sidebar ul li a:hover,
+  .wrapper .sidebar ul li a.active{
+    color: #e55ac4;
+  
+    background:white;
+      border-right: 2px solid #e55ac4;
+  }
+  
+  .wrapper .sidebar ul li a:hover .icon,
+  .wrapper .sidebar ul li a.active .icon{
+    color: #e55ac4;
+  }
+  
+  .wrapper .sidebar ul li a:hover:before,
+  .wrapper .sidebar ul li a.active:before{
+    display: block;
+  }
+  
+  .wrapper .section{
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper .section .top_navbar{
+    background: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+   
+  }
+  
+  .wrapper .section .top_navbar .hamburger a{
+    font-size: 28px;
+    color: #f4fbff;
+  }
+
+  .wrapper .section .top_navbar .cartIcon a{
+    font-size: 28px;
+    color: #f4fbff;
+    margin-left: 10px;
+  }
+  
+  .wrapper .section .top_navbar .hamburger a:hover{
+    color: #e55ac4;
+  }
+  
+  .wrapper .section .top_navbar .cartIcon a:hover{
+    color: #e55ac4;
+  }
+
+   .wrapper .section .container{
+    margin: 30px;
+    background: transparent; 
+    line-height: 28px;
+    padding: 50px 0;
+    min-height: 200px;
+  }
+  
+  body.active .wrapper .sidebar{
+    left: -225px;
+  }
+  
+  body.active .wrapper .section{
+    margin-left: 0;
+    width: 100%;
+  }
+/* end sidebar */
+
+  .breadcrumb {
+    background-color: transparent;
+  }
+
+/* start inventory */
+
+// body {
+//     padding-top: 80px;
+//   }
+  
+  .show-cart li {
+    display: flex;
+  }
+  .card {
+    background-color: transparent;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+  }
+  .card-img-top {
+    width: auto;
+    height: 200px;
+    align-self: center;
+  }
+
+.btn-primary{
+    border: none;
+    background-color: #e55ac4;
+}
+
+.btn-danger{
+    border: none;
+    background-color: #f7501d;
+    }
