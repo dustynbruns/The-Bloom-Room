@@ -16,6 +16,11 @@
     "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin inventory.html -d dist --htmlmin -o dist/cart.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
   },
+
+  "hosting": {
+    "public": "dist"
+  },
+
   "author": "Dustyn Bruns",
   "license": "ISC",
   "devDependencies": {
